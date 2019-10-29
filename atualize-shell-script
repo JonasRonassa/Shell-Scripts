@@ -1,0 +1,33 @@
+#! /bin/bash
+
+clear
+
+echo ""
+echo "Atualizando Repositórios."
+echo ""
+
+sudo apt update -y
+
+echo ""
+echo "Repositórios Atualizados."
+echo ""
+
+sleep 1s
+clear
+
+echo ""
+echo "Atualizando Programas."
+echo ""
+
+sudo apt upgrade -y
+
+echo ""
+echo "Programas Atualizados."
+echo ""
+
+sleep 2s
+clear
+screenfetch
+echo ""
+history -c
+history
