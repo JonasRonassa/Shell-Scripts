@@ -1,0 +1,16 @@
+#!/bin/bash
+
+clear;
+
+echo "##################################################"
+echo "#####   INICIANDO O TESTE DE VELOCIDADE DE   #####"
+echo "##### CONEXÃO À REDE MUNDIAL DE COMPUTADORES #####"
+echo "##################################################"
+
+while [[ 3 -eq 3 ]] ;
+do
+	echo ""
+	date;
+	speedtest-cli | grep --color "Download";
+
+done
