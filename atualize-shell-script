@@ -1,33 +1,14 @@
-#! /bin/bash
+#! /usr/bin/env bash
 
-clear
-
-echo ""
-echo "Atualizando Repositórios."
-echo ""
-
-sudo apt update -y
-
-echo ""
-echo "Repositórios Atualizados."
-echo ""
-
-sleep 1s
-clear
-
-echo ""
-echo "Atualizando Programas."
-echo ""
-
-sudo apt upgrade -y
-
-echo ""
-echo "Programas Atualizados."
-echo ""
-
-sleep 2s
-clear
-screenfetch
-echo ""
-history -c
-history
+clear;
+echo -e "\nAtualizando Repositórios.\n";
+sudo apt update -y;
+echo -e "\nRepositórios Atualizados.\n"
+sleep 2s;
+clear;
+echo -e "\nAtualizando Programas e Removendo Lixo.\n"
+sudo apt upgrade -y;sudo apt autoremove -y;
+echo -e "\nProgramas Atualizados e Lixos Removidos.\n"
+sleep 2s;
+clear;
+echo -e "\n\tSistema Atualizado com Sucesso!\n\tFique a vontade $USER!\n"
