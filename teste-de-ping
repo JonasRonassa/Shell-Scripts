@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /usr/bin/env bash
 
 clear;
 
@@ -7,9 +7,7 @@ echo "#####      INICIANDO O TESTE DE PING AO      #####"
 echo "#####          SITE: www.google.com          #####"
 echo "##################################################"
 
-while [[ 3 -eq 3 ]] ;
+while [[ true ]] ;
 do
-
-	ping www.google.com | grep --color "time="
-
+    ping www.google.com | grep --color "time="
 done
