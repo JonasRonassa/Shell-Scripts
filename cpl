@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+
+programa="$1"
+p_compilado=$(echo $1 | sed 's/.c//')
+gcc $1 -o $p_compilado
+./$p_compilado
