@@ -18,3 +18,7 @@
 /home/jonas/teste/teste1/teste11/3- Vento Rápido 2.mp3
 /home/jonas/teste/teste1/1- Voltando Vídeo.mp3
 /home/jonas/teste/teste1/3- Vento Rápido 2.mp3
+/home/jonas/teste/teste3/arquivo.txt
+/home/jonas/teste/teste2/arquivo.txt
+/home/jonas/teste/teste1/teste11/arquivo.txt
+/home/jonas/teste/teste1/arquivo.txt

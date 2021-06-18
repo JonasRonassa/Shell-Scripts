@@ -4,7 +4,7 @@
 # ./delete-files.sh
 #
 # Shell Scripting: Função para apagar todos os arquivos de mesma extensão, 
-#                  de forma recursiva dentro de um diretório e suas subpastas.
+#                  de forma recursiva dentro de um diretório e das suas subpastas.
 #
 # Uso: delete-files.sh [caminho-para-o-diretório] [extensão]
 #
@@ -20,7 +20,7 @@ deleta_arquivos(){
     clear;
     caminho="$1";
     extensao=$(echo $2 | sed 's/^/*./');
-    echo -e "Tem certeza que quer apagar todos os: '$2' em --> '$1' ?(y/n)";
+    echo -e "Tem certeza que quer apagar todos os arquivos: '$2' em '$1' ? (y/n)";
     read opcao;
     if [[ $opcao = 'y' ]];
     then
@@ -36,7 +36,7 @@ deleta_arquivos(){
             done < arquivos
             rm arquivos;
             echo -e "\nScript finalizado."
-            echo -e "\nUma lista dos arquivos deletados se encontram no diretório:\n"$(pwd)"/arq-deletados.txt\n"
+            echo -e "\nA lista dos arquivos deletados se encontra no diretório:\n"$(pwd)"/arq-deletados.txt\n"
         else
             echo -e "Não foram encontrados arquivos com a extensão: $2."
         fi
