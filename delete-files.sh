@@ -18,7 +18,6 @@
 
 deleta_arquivos(){
     clear;
-    caminho="$1";
     extensao=$(echo $2 | sed 's/^/*./');
     echo -e "Tem certeza que quer apagar todos os arquivos: '$2' em '$1' ? (y/n)";
     read opcao;
